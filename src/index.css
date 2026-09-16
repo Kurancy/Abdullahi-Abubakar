@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.2);
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(56, 189, 248, 0.4);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(14, 165, 233, 0.25);
+  border-radius: 9999px;
+}
+
+/* Performance and text rendering */
+.font-display {
+  font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Fine technical grid pattern */
+.bg-grid-pattern-dark {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(56, 189, 248, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(56, 189, 248, 0.03) 1px, transparent 1px);
+}
+
+.bg-grid-pattern-light {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(2, 132, 199, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(2, 132, 199, 0.04) 1px, transparent 1px);
+}
+
+/* Dots pattern */
+.bg-dots-pattern-dark {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(56, 189, 248, 0.12) 1px, transparent 1px);
+}
+
+.bg-dots-pattern-light {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(2, 132, 199, 0.12) 1px, transparent 1px);
+}
+
+/* GPU Hardware-Accelerated High-Performance Animations */
+@keyframes dataPacketFlow {
+  0% {
+    transform: translate3d(-10%, 0, 0);
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(110%, 0, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes dataPacketFlowRev {
+  0% {
+    transform: translate3d(110%, 0, 0);
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(-10%, 0, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes radarPingWave {
+  0% {
+    transform: scale(0.35);
+    opacity: 0.9;
+  }
+  60% {
+    opacity: 0.35;
+  }
+  100% {
+    transform: scale(3.2);
+    opacity: 0;
+  }
+}
+
+@keyframes ambientBreathe {
+  0%, 100% {
+    opacity: 0.28;
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 0.42;
+    transform: scale(1.08) translate3d(0, 0, 0);
+  }
+}
+
+.animate-data-flow {
+  animation: dataPacketFlow 4s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+  will-change: transform, opacity;
+}
+
+.animate-data-flow-fast {
+  animation: dataPacketFlow 2.8s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+  will-change: transform, opacity;
+}
+
+.animate-data-flow-rev {
+  animation: dataPacketFlowRev 5s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+  will-change: transform, opacity;
+}
+
+.animate-radar-ping {
+  animation: radarPingWave 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  will-change: transform, opacity;
+}
+
+.animate-ambient-breathe {
+  animation: ambientBreathe 9s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+

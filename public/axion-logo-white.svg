@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 80" fill="none" width="100%" height="100%">
+  <!-- Icon: 4 rounded squares in 2x2 arrangement -->
+  <g transform="translate(4, 10)">
+    <!-- Top-Left: Bright Light Blue -->
+    <rect x="0" y="0" width="27" height="27" rx="6" fill="#38BDF8" />
+    <!-- Top-Right: Deep Royal Blue -->
+    <rect x="33" y="0" width="27" height="27" rx="6" fill="#1D4ED8" />
+    <!-- Bottom-Left: Deep Royal Blue -->
+    <rect x="0" y="33" width="27" height="27" rx="6" fill="#1D4ED8" />
+    <!-- Bottom-Right: Bright Light Blue -->
+    <rect x="33" y="33" width="27" height="27" rx="6" fill="#38BDF8" />
+  </g>
+
+  <!-- Thin vertical blue divider -->
+  <line x1="82" y1="12" x2="82" y2="68" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" opacity="0.8" />
+
+  <!-- Wordmark: AXION with TECHNOLOGIES underneath (Dark background / White text) -->
+  <g transform="translate(98, 0)">
+    <text x="0" y="41" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="28" font-weight="800" letter-spacing="0.18em" fill="#FFFFFF">AXION</text>
+    <text x="1" y="60" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="600" letter-spacing="0.38em" fill="#38BDF8">TECHNOLOGIES</text>
+  </g>
+</svg>
